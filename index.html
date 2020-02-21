@@ -1,43 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>YouTube video finder</title>
-    <link rel="shortcut icon" href="#" />
-    <link rel="stylesheet" href="index.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trip Planner</title>
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="index.css">
   </head>
   <body>
     <div class="container">
-      <h1>Vacation finder</h1>
-
+      <h1>Find National Parks in your state!</h1>
+        <p>Looking to vacation at one of our nations fantastic National Parks?  We can help you find the perfect one for your expected
+            travel plans!  Just enter in the state or states you plan on visiting and we will list out all of the great National Parks
+            in that area!  If you don't want to be inundated with every possible choice, feel free to limit the maximum number of
+            results!
+        </p>  
       <form id="js-form">
-        <label for="search-term">Search term</label>
-        <input type="text" name="search-term" id="js-search-term" required />
-
+        <label for="search-term">State Code</label>
+        <input type="text" name="search-term" id="js-search-term" placeholder="eg. TX, MN, OR" required>
+        <br><br>
         <label for="max-results">Maximum results to return</label>
-        <input
-          type="number"
-          name="max-results"
-          id="js-max-results"
-          value="10"
-        />
-
-        <input type="submit" value="Go!" />
+        <input type="number" name="max-results" id="js-max-results" value="10">
+        <br><br>
+        <input type="submit" value="Find my Parks!">
       </form>
 
       <p id="js-error-message" class="error-message"></p>
-      <section id="results" class="hidden">
-        <h2>Search results</h2>
-        <ul id="results-list"></ul>
-      </section>
+        <section id="results" class="hidden">
+          <h2>Search results</h2>
+          <ul id="results-list">
+          </ul>
+        </section>
     </div>
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.js"
-      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="index.js"></script>
   </body>
 </html>

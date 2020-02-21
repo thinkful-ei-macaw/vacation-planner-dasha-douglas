@@ -3,11 +3,10 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
-button,
-input[type="text"] {
+button, input[type="text"] {
   padding: 5px;
 }
 
@@ -16,12 +15,14 @@ button:hover {
 }
 
 .container {
+  display: flex;
   max-width: 600px;
   margin: 0 auto;
+  flex-direction: column;
 }
 
 .error-message {
-  color: red;
+    color: red;
 }
 
 .hidden {
